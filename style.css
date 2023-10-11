@@ -13,6 +13,7 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
+  font-family: 'Urbanist', sans-serif;
 }
 .container {
   min-height: 100vh;
@@ -86,7 +87,7 @@ body {
   transform: rotate(150deg);
 }
 
-/* inner circles */
+/*--- inner circles ---*/
 .inner-circle {
   position: absolute;
   top: 15%;
@@ -121,4 +122,33 @@ body {
   height: 0.7rem;
   border-radius: 100%;
   box-shadow: -0.5px -2.5px 5px 1px #ec5f5d, 0.5px 1.5px 5px 1px #812b1d;
+}
+.brand {
+  position: absolute;
+  z-index: 3;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 9rem;
+}
+.brand .brand-first {
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+.brand .brand-second {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.logo {
+  width: 30px;
+  border-left: 0.6rem solid #ec0100;
+}
+/*--- arrows ---*/
+.arrow--hour {
+  position: absolute;
+  height: 11.5rem;
+  width: 1.3rem;
+  background: #252525;
+  transform-origin: left;
+  transform: translateY(-50%);
+  z-index: 4;
 }
